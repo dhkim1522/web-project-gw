@@ -1,0 +1,17 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: web-project-discovery
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    wait-time-in-ms-when-sync-empty: 0
+    renewal-percent-threshold: 0.85
+    enable-self-preservation: false
+  instance:
+    lease-renewal-interval-in-seconds: 0
